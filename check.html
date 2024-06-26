@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Registration</title>
+    <style>
+        @font-face {
+            font-family: 'Garet';
+            src: url('path/to/garet-font.woff2') format('woff2'),
+                 url('path/to/garet-font.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Garet', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .description {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+        input[type="email"] {
+            width: 285px;
+            padding: 10px;
+            margin: 5px 6px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔍 Check Registration 📧</h2>
+        <p class="description">Oh no, you don't remember if you registered? Put your email below to double check. 😅</p>
+        <form action="check.php" method="POST" id="checkForm">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <input type="submit" value="Check">
+        </form>
+    </div>
+</body>
+</html>
